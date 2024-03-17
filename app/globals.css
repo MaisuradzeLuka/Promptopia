@@ -1,0 +1,229 @@
+.app {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.black_btn {
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background-color: #000;
+  padding: 0.375rem 1.25rem;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  text-align: center;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black_btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.outline_btn {
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 0.375rem 1.25rem;
+  color: #000;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  text-align: center;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outline_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.head_text {
+  margin-top: 1.25rem;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #000;
+}
+
+.orange_gradient {
+  background-image: linear-gradient(to right, #ffb300, #ff6600, #ffcc00);
+  background-clip: text;
+  color: transparent;
+}
+
+.green_gradient {
+  background-image: linear-gradient(to right, #68d391, #48bb78);
+  background-clip: text;
+  color: transparent;
+}
+
+.blue_gradient {
+  background-image: linear-gradient(to right, #4fd1c5, #38b2ac);
+  background-clip: text;
+  color: transparent;
+}
+
+.desc {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  color: #4b5563;
+  max-width: 2xl;
+}
+
+.search_input {
+  display: block;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #e2e8f0;
+  background-color: #fff;
+  padding-top: 0.625rem 1.25rem 0.625rem 3rem;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 94px 0 rgba(199, 199, 199, 0.2);
+  font-weight: 500;
+  outline: none;
+}
+
+.copy_btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 10px -50px 94px 0 rgba(199, 199, 199, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.glassmorphism {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 10px -50px 94px 0 rgba(199, 199, 199, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 1.25rem;
+}
+
+.prompt_layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem 0;
+}
+
+.feed {
+  margin-top: 4rem auto;
+  width: 100%;
+  max-width: 36rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_textarea {
+  width: 100%;
+  display: flex;
+  border-radius: 0.375rem;
+  height: 200px;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  outline: none;
+}
+
+.form_input {
+  width: 100%;
+  display: flex;
+  border-radius: 0.375rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  outline: none;
+}
+
+.logo_text {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  min-width: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.dropdown_link {
+  font-size: 0.875rem;
+  color: #4a5568;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.dropdown_link:hover {
+  color: #6b7280;
+}
+
+.prompt_card {
+  flex: 1;
+  break-inside: avoid;
+  border-radius: 1rem;
+  border: 1px solid #d1d5db;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(20px);
+  width: 360px;
+  height: fit-content;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
