@@ -1,0 +1,51 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 15px 25px 0 25px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  &__userBtns {
+    gap: 10px;
+
+    button {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
+  }
+
+  &__mobileView {
+    position: relative;
+    display: none;
+
+    a {
+      color: #000;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 560px) {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .logo_text {
+    display: block;
+  }
+}

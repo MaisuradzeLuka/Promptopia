@@ -175,9 +175,11 @@
   min-width: 210px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.7rem;
   justify-content: flex-end;
   align-items: flex-end;
+  z-index: 999;
+  box-shadow: 0 0 2px 3px rgb(207, 207, 207);
 }
 
 .dropdown_link {
